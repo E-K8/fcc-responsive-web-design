@@ -9,9 +9,31 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">This is to collect information</p>
     <form id="survey-form">
-      <input id="name" type="text" required />
-      <input id="email" type="text" required />
-      <input id="number" />
+      <label for="name" id="name-label"></label>
+      <input id="name" type="text" placeholder="Enter you name" required />
+
+      <label for="email" id="email-label"></label>
+      <input id="email" type="email" placeholder="Enter your email" required />
+
+      <label for="number" id="number-label"></label>
+      <input id="number" type="number" placeholder="Enter your number" />
+
+      <select id="dropdown">
+        <option disabled selected value>Select an option</option>
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+      </select>
+
+      <p>Please select of the options so I can have this ticked off my list</p>
+      <label for="">
+        <input type="radio" name="options" checked />
+        one of two
+      </label>
+
+      <label for="">
+        <input type="radio" name="options" />
+        two of two
+      </label>
     </form>
   </body>
 </html>
