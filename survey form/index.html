@@ -3,20 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Survey form</title>
   </head>
   <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">This is to collect information</p>
     <form id="survey-form">
-      <label for="name" id="name-label"></label>
+      <label for="name" id="name-label">Enter your name</label>
       <input id="name" type="text" placeholder="Enter you name" required />
 
-      <label for="email" id="email-label"></label>
+      <label for="email" id="email-label">Enter your email</label>
       <input id="email" type="email" placeholder="Enter your email" required />
 
-      <label for="number" id="number-label"></label>
-      <input id="number" type="number" placeholder="Enter your number" />
+      <label for="number" id="number-label">Enter your number</label>
+      <input
+        id="number"
+        type="number"
+        min="11"
+        max="12"
+        placeholder="Enter your number"
+      />
 
       <select id="dropdown">
         <option disabled selected value>Select an option</option>
@@ -26,14 +33,52 @@
 
       <p>Please select of the options so I can have this ticked off my list</p>
       <label for="">
-        <input type="radio" name="options" checked />
+        <input type="radio" name="options" value="one" checked />
         one of two
       </label>
 
       <label for="">
-        <input type="radio" name="options" />
+        <input type="radio" name="options" value="two" />
         two of two
       </label>
+
+      <p>
+        What professions in IT do you consider suitable for yourself?
+        <span>(Check all that apply)</span>
+      </p>
+      <label>
+        <input name="profession" type="checkbox" value="frontend-developer" />
+        Frontend Developer
+      </label>
+      <label>
+        <input name="profession" type="checkbox" value="backend-developer" />
+        Backend Developer
+      </label>
+      <label>
+        <input name="profession" type="checkbox" value="devops" />
+        DevOps
+      </label>
+      <label>
+        <input name="profession" type="checkbox" value="game-developer" />
+        Game developer
+      </label>
+      <label>
+        <input name="profession" type="checkbox" value="mobile-developer" />
+        Mobile Developer
+      </label>
+      <label>
+        <input name="profession" type="checkbox" value="data-engineer" />
+        Data Engineer
+      </label>
+      <label>
+        <input name="profession" type="checkbox" value="cloud-engineer" />
+        Cloud Engineer
+      </label>
+
+      <p>Any last words before you submit the form?</p>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+
+      <button type="submit" id="submit">Submit</button>
     </form>
   </body>
 </html>
