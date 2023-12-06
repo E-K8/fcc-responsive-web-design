@@ -1,0 +1,78 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 15px; /* Adjust this value to match the height of my fixed nav-bar */
+  /* TODO ↑↑↑ */
+}
+
+header {
+  background-color: #9cd8bc;
+  color: black;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #9cd8bc;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white;
+  z-index: 1001;
+}
+
+#nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+#nav-bar a:hover {
+  color: #ffcc00;
+}
+
+.video-container {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ddd;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .video-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  * {
+    background-color: antiquewhite;
+  }
+
+  header,
+  #nav-bar a {
+    font-size: 14px;
+  }
+}
