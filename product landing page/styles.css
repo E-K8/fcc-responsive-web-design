@@ -2,12 +2,15 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #333;
   line-height: 1.6;
-  padding-top: 15px; /* Adjust this value to match the height of my fixed nav-bar */
-  /* TODO ↑↑↑ */
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
 }
 
 header {
-  background-color: #9cd8bc;
+  background-color: #567566;
   color: black;
   padding: 10px 0;
   z-index: 1000;
@@ -17,11 +20,12 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  padding-right: 100%-1rem;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background-color: #9cd8bc;
+  background-color: #567566;
   color: #333;
   text-decoration: none;
   font-weight: bold;
@@ -40,19 +44,18 @@ header {
   color: #ffcc00;
 }
 
+#header-img {
+  padding-left: 1rem;
+}
+
 .video-container {
   display: flex;
+  width: 100%;
   background-color: #f2f2f2;
-  padding: 10px;
   border: 1px solid #ddd;
   justify-content: center;
   text-align: center;
-  margin: 20px 0;
-}
-
-section {
-  padding: 20px;
-  margin: 20px 0;
+  margin: 3rem 0;
 }
 
 @media screen and (max-width: 768px) {
